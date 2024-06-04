@@ -10,7 +10,7 @@ const apiURL = 'https://exam-backend-4fy5.onrender.com/api/v1/blague';
         const imageLink = ['lol_0.svg', 'lol_1.svg', 'lol_2.svg', 'lol_3.svg', 'lol_4.svg', 'clown.svg', 'lol.svg', 'retro.svg'];
         for(let i = 0; i < 18; i++) {
             const emoji = document.createElement('img')
-            emoji.src = `/assets/img/icon/${imageLink[Math.floor(Math.random()*imageLink.length)]}`;
+            emoji.src = `assets/img/icon/${imageLink[Math.floor(Math.random()*imageLink.length)]}`;
             emoji.classList.add('emojis');
             emoji.style.top = `${Math.floor(Math.random()*100)}%`;
             emoji.style.left = `${Math.floor(Math.random()*100)}%`;
