@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffcd45;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxMiddle {
+    z-index: 100;
+    width: max-content;
+    height: max-content;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.boxMiddle img {
+    border-radius: 50px;
+}
+
+.boxBtn {
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+#responseBlague {
+    z-index: 101;
+    position: absolute;
+    top: 43%;
+    right: 18%;
+    width: 60%;
+    transform: rotate(180deg);
+    color: #C83532;
+    font-size: large;
+}
+
+#affichageBlague {
+    z-index: 101;
+    position: absolute;
+    top: 35px;
+    left: 15%;
+    width: 75%;
+    color: #C52961;
+    font-size: x-large;
+}
+
+button {
+    margin-left: 10px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    background: rgb(255, 151, 0);
+    border: none;
+    z-index: 1;
+}
+
+button:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #000;
+}
+
+button:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+}
+
+button:active {
+    top: 2px;
+}
+
+#btnResponse {
+    display: none;
+}
+
+.emojis {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
